@@ -1,0 +1,18 @@
+﻿
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, S, P;
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите a:";
+		cin >> a;
+	cout << "Введите b:";
+		cin >> b;
+	S = a * b;
+	P = 2 * (a + b);
+	cout << S<<endl;
+		cout << P;
+	return 0;
+}
