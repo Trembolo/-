@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	float a, b, c;
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите a:";
+	cin >> a;
+	cout << "Введите b:";
+	cin >> b;
+	c = a + b;
+	c = c / 2;
+	cout << "Среднее арифметическое равно:"<<c;
+	return 0;
+
+}
