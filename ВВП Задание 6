@@ -1,0 +1,129 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	float A, B;
+	cout << "A:";
+	cin >> A;
+	cout << "B:";
+	cin>>B;
+	A = A + B;
+	B = A - B;
+	A = A - B;
+	cout <<"A="<< A << endl <<"B=" << B;
+}
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	double a, b, c, x;
+	cout << "Vvedite znachenie A: ";
+	cin >> a;
+	cout << "Vvedite znachenie B: ";
+	cin >> b;
+	cout << "Vvedite znachenie C: ";
+	cin >> c;
+	x = c;
+	c = a;
+	a = b;
+	b = x;
+	cout << "A=" << a << endl<< "B=" << b << endl << "C=" << c;
+	return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	double a, b, c, x;
+	cout << "Vvedite znachenie A: ";
+	cin >> a;
+	cout << "Vvedite znachenie B: ";
+	cin >> b;
+	cout << "Vvedite znachenie C: ";
+	cin >> c;
+	x = b;
+	b = a;
+	a = c;
+	c = x;
+	cout << "A=" << a << endl<< "B=" << b << endl << "C=" << c;
+	return 0;
+}
+
+#include <iostream> 
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+
+	double y;
+	double x;
+	cout << "x: ";
+	cin >> x;
+	y = (3 * pow(x, 6)) - (6 * pow(x, 2)) - 7;
+	cout << "y = " << y;
+	return 0;
+}
+
+#include <iostream> 
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+
+	double y;
+	double x;
+	cout << "x: ";
+	cin >> x;
+	y = (4 * pow(x-3, 6)) - (7 * pow(x-3, 3)) + 2;
+	cout << "y = " << y;
+	return 0;
+}
+
+#include <iostream> 
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+
+	double y;
+	double x;
+	cout << "x: ";
+	cin >> x;
+	y = (4 * pow(x-3, 6)) - (7 * pow(x-3, 3)) + 2;
+	cout << "y = " << y;
+	return 0;
+}
+
+#include <iostream>
+using namespace std;    
+
+int main()
+{
+	setlocale(LC_ALL, "Rus"); 
+	int x;
+	int z;                     
+	cout << "Введите число\n";
+	cin >> x;
+	z = x;
+	z = z * x;
+	cout << "Число в степени 2 =\t" << z << endl;
+	z = z * x * x;
+	cout << "Число в степени 4 =\t" << z << endl;
+	z = z * x * x * x * x;
+	cout << "Число в степени 8 =\t" << z << endl;
+	return 0;
+}
+
+
+
