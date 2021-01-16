@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+double x1, x2, y1, y2, s;
+cout << "Введите x1 и y1";
+cin >> x1 >> y1;
+cout << "Введите x2 и y2";
+cin >> x2 >> y2;
+s = sqrt((x2 - x1)*(x2-x1) + (y2 - y1)*(y2-y1));
+
+cout << "S="<< s;
+
+}
