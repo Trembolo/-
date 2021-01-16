@@ -1,0 +1,67 @@
+#include <iostream>
+#include<locale.h>
+using namespace std;
+int main()
+{
+ setlocale(LC_ALL, "Russian");
+ int N;
+ cout << "N = ";
+ cin >> N;
+ N %= 60;
+ cout << N;
+}
+#include<iostream>
+#include<locale.h>
+using namespace std;
+int main()
+{
+ int day, k;
+ cout << "День этого года = ";
+ cin >> k;
+ day = k % 7;
+ cout << day << endl;
+}
+#include<iostream>
+#include<locale.h>
+using namespace std;
+int main()
+{
+ setlocale(LC_ALL, "Russian");
+ int K, day, N;
+ cout << "K = ";
+ cin >> K;
+ cout << "N = ";
+ cin >> N;
+
+ N = N - 2;
+ day = ((K + N) % 7) + 1;
+ cout << "День недели = " << day;
+}
+#include<iostream>
+#include<locale.h>
+using namespace std;
+int main()
+{
+ setlocale(LC_ALL, "Russian");
+ int A, B, C, K;
+ cout << "A = ";
+ cin >> A;
+ cout << "B = ";
+ cin >> B;
+ cout << "C = ";
+ cin >> C;
+ K = (A * B) / (C * C);
+ cout << "Кол-во квадратов = " << K;
+}
+#include<iostream>
+#include<locale.h>
+using namespace std;
+int main()
+{
+ setlocale(LC_ALL, "Russian");
+ int k, j;
+ cout << "Целое число:";
+ cin >> k;
+ j = (k / 100) + 1;
+ cout << j;
+}
