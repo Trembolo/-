@@ -1,0 +1,140 @@
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int a, b;
+
+    cout << "a = ";
+    cin >> a;
+    cout << "b = ";
+    cin >> b;
+
+    int i, i_2;
+    for (i = a; i <= b; ++i) {
+        for (i_2 = 1; i_2 <= i; ++i_2)
+            cout << i << " ";
+    }
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int a, b;
+
+    cout << "a = ";
+    cin >> a;
+    cout << "b = ";
+    cin >> b;
+
+    int t = a;
+    while (t >= 0) {
+        t -= b;
+    }
+    cout << t + b;
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int N;
+    int K = 0;
+    int S = 0;
+
+    cout << "N = ";
+    cin >> N;
+
+    while (S <= N) {
+        K++;
+        S += K;
+    }
+    cout << "K = " << K;
+}
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    float p;
+
+    cout << "p = ";
+    cin >> p;
+
+    int k = 1;
+    float s = 1000;
+    while (s <= 1100) {
+        k++;
+        s += s * p / 100;
+    }
+    cout << "k = " << k << endl << "s = " << s;
+}
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int a, b;
+
+    cout << "a = ";
+    cin >> a;
+    cout << "b = ";
+    cin >> b;
+
+    while ((a != 0) & (b != 0)) {
+        if (a > b) {
+            a %= b;
+        }
+        else {
+            b %= a;
+        }
+    }
+    cout << a + b;
+}
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int N, F1, F2, K;
+
+    cout << "N = ";
+    cin >> N;
+
+    F1 = 1;
+    F2 = 1;
+    K = 2;
+
+    while (N > F2) {
+        F2 += F1;
+        F1 = F2 - F1;
+        K++;
+    }
+    if (N = F2) {
+        cout << "Порядковый номер числа Фибоначчи = " << K;
+    }
+    else {
+        cout << " " << N << " не является числом Фибоначчи";
+    }
+}
