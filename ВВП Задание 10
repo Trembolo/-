@@ -1,0 +1,176 @@
+#include<iostream>
+#include<locale.h>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int A, B;
+    cout << "A = ";
+    cin >> A;
+    cout << "B = ";
+    cin >> B;
+    if (A > 2 and B <= 3) {
+        cout << "True";
+    }
+    else{
+        cout << "False";
+    }
+}
+
+
+#include<iostream>
+#include<locale.h>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int A, B, C;
+    cout << "A = ";
+    cin >> A;
+    cout << "B = ";
+    cin >> B;
+    cout << "C = ";
+    cin >> C;
+    if (A < B and B < C) {
+        cout << "True";
+    }
+    else {
+        cout << "False";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#include<iostream>
+#include<locale.h>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int x;
+    cout << "x = ";
+    cin >> x;
+    if ((x >= 10) and (x < 99) and (x % 2) == 0) {
+        cout << "True";
+    }
+    else {
+        cout << "False";
+    }
+}
+
+#include<iostream>
+#include<locale.h>
+using namespace std;
+
+int main()
+ {
+    setlocale(LC_ALL, "Russian");
+    int A;
+    cout << "A = ";
+    cin >> A;
+    if ((A / 100) > (A % 100 / 10) && (A % 100 / 10) > (A % 10) || (A / 100) < (A % 100 / 10) && (A % 100 / 10) < (A % 10)) {
+        cout << "True";
+    }
+    else {
+        cout << "False";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+using namespace std;
+
+int main()
+ {
+    setlocale(LC_ALL, "Russian");
+    int A;
+
+    cout << "A = ";
+    cin >> A;
+    A = abs(A);
+    if (((A % 10) == (A / 1000)) & (((A % 100) / 10) == ((A % 1000) / 100))) {
+        cout << "True";
+    }
+    else {
+        cout << "False";
+    }
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+using namespace std;
+
+int main()
+ {
+    setlocale(LC_ALL, "Russian");
+    int A, B, C;
+    cout << "A = ";
+    cin >> A;
+    cout << "B = ";
+    cin >> B;
+    cout << "C = ";
+    cin >> C;
+    if ((A * A + B * B == C * C) || (B * B + C * C == A * A) || (C * C + A * A == B * B)) {
+        cout << "True";
+    }
+    else {
+        cout << "False";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+using namespace std;
+
+int main() 
+{
+    setlocale(LC_ALL, "Russian");
+    int A, B, C;
+    cout << "A = ";
+    cin >> A;
+    cout << "B = ";
+    cin >> B;
+    cout << "C = ";
+    cin >> C;
+    if ((A + B) > C & (A + C) > B & (B + C) > A) {
+        cout << "True";
+    }
+    else {
+        cout << "False";
+    }
+}
+
