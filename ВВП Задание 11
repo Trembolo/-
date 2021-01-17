@@ -1,0 +1,185 @@
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int A, B;
+
+    cout << "A = ";
+    cin >> A;
+    cout << "B = ";
+    cin >> B;
+
+    if (A == B) {
+        A = 0;
+        B = 0;
+    }
+    if (A > B) {
+        B = A;
+    }
+    else {
+        A = B;
+    }
+    cout << "A = " << A << endl << "B = " << B;
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int A, B, C;
+
+    cout << "A = ";
+    cin >> A;
+    cout << "B = ";
+    cin >> B;
+    cout << "C = ";
+    cin >> C;
+
+    if ((B <= B) && (B <= A)) {
+        cout << A + C;
+    }
+    else {
+        if ((A <= C) && (A <= B)) {
+            cout << B + C;
+        }
+        else {
+            cout << B + A;
+        }
+    }
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int A, B, C;
+
+    cout << "A = ";
+    cin >> A;
+    cout << "B = ";
+    cin >> B;
+    cout << "C = ";
+    cin >> C;
+
+    if (abs(A - B) < abs(A - C)) {
+        cout << "Точка = " << B << endl;
+        if ((A - B) > 0)
+            cout << "Расстояние = " << A - B;
+        else if ((A - B) < 0)
+            cout << "Расстояние = " << (A - B) * -1;
+    }
+    else {
+        cout << "Точка = " << C << endl;
+        if ((A - C) > 0)
+            cout << "Расстояние = " << A - C;
+        else if ((A - C) < 0)
+            cout << "Расстояние = " << (A - C) * -1;
+    }
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int x, y;
+
+    cout << "x = ";
+    cin >> x;
+    cout << "y = ";
+    cin >> y;
+    
+
+    if (x > 0 && y > 0) {
+        cout << "1 четверть";
+    }
+    else if (x < 0 && y > 0) {
+        cout << "2 четверть";
+    }
+    else if (x < 0 && y < 0) {
+        cout << "3 четверть";
+    }
+    else
+        cout << "4 четверть";
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int x;
+
+    cout << "x = ";
+    cin >> x;
+
+    if (x == 0) {
+        cout << "Нулевое ";
+    }
+    else {
+        if (x > 0) {
+            cout << "Положительное ";
+        }
+        else {
+            cout << "Отрицательное ";
+        }
+        if (x % 2 == 0) {
+            cout << "четное ";
+        }
+        else {
+            cout << "нечетное ";
+        }
+    }
+    cout << "число";
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int x;
+
+    cout << "Введите 'x' в диапозоне 1-999" << endl;
+    cout << "x = ";
+    cin >> x;
+
+    if (x % 2 == 0) {
+        cout << "Четное ";
+    }
+    else {
+        cout << "Не четное ";
+    }
+    if (x / 100 > 0 && x / 100 < 10) {
+        cout << "трехзначное ";
+    }
+    else if (x / 10 > 0 && x / 10 < 10) {
+        cout << "двухзначное ";
+    }   
+    else if (x / 10 == 0) {
+        cout << "однозначное ";
+    }
+
+    cout << "число";
+}
