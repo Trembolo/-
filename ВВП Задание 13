@@ -1,0 +1,111 @@
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    float c, k;
+
+    cout << "Стоимость 1 кг = ";
+    cin >> c;
+    cout << "Стоимость Конфет" << endl;
+    for (k = 0.1; k < 1.1; k += 0.1) {
+        cout << k << " kg = " << c * k << endl;
+    }
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int N;
+    double p = 1;
+    cout << "N = ";
+    cin >> N;
+    for (int i = 1; i <= N; i++) {
+        p = p * (1 + 0.1 * i);
+    }
+    cout << "p = " << p;
+}
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int n;
+
+    cout << "n = ";
+    cin >> n;
+
+    int result = 0;
+    int i;
+    for (i = 1; i <= (2 * n - 1); i += 2) {
+        result += i;
+        cout << result;
+    }
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    float a;
+    int n;
+
+    cout << "a = ";
+    cin >> a;
+
+    cout << "n = ";
+    cin >> n;
+
+    float a2 = 1, result = 1;
+    int i;
+    for (i = 2; i <= n; ++i)
+    {
+        a2 *= a;
+        result += a2;
+    }
+    cout << result;
+}
+
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    float a;
+    int n;
+
+    cout << "a = ";
+    cin >> a;
+
+    cout << "n = ";
+    cin >> n;
+
+    float a2 = 1, result = 1;
+    int i;
+
+    for (i = 2; i <= n; ++i)
+    {
+        a2 *= -a;
+        result += a2;
+    }
+    cout << result;
+}
+
