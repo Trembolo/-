@@ -1,0 +1,211 @@
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int a[10], b[10];
+	int n;
+
+	cout << "N: ";
+	cin >> n;
+
+	int i;
+	for (i = 0; i < n; ++i) {
+		cout << i + 1<<endl;
+		cin>>a[i];
+	}
+	for (i = 0; i < n; ++i) {
+		cout << i + 1<<endl;
+		cin >> b[i];
+	}
+
+	for (i = 0; i < n; ++i) {
+		a[i] += b[i];
+		b[i] = a[i] - b[i];
+		a[i] = a[i] - b[i];
+	}
+	cout << "A:"<<endl;
+	for (i = 0; i < n; ++i)
+		cout << i + 1<< a[i]<<endl;
+
+	cout << "B: ";
+	for (i = 0; i < n; ++i)
+		cout << i + 1 << b[i];
+
+	return 0;
+}
+int size;
+	cin >> size;
+
+	int *masA = new int[size];
+	int *masB = new int[size];
+
+	for (int i = 0, sum = 0; i < size; ++i) {
+		masA[i] = rand() % 100;
+
+		masB[i] = (sum += masA[i]) / (i + 1);
+	};
+
+	cout << "Print masA\n";
+	for (int i = 0; i < size; ++i)
+		cout << masA[i] << ' ';
+	cout << endl;
+
+	cout << "Print masB\n";
+	for (int i = 0; i < size; ++i)
+		cout << masB[i] << ' ';
+	cout << '\n' << endl;
+
+	system("PAUSE");
+
+	delete[] masA;
+	delete[] masB;
+
+	return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+
+	int arr[] = { 1, 2, 3, 4, 1 }; 
+
+	int a = 0;
+
+	for (int i = 0; i < 5; i++)
+	{
+		if (arr[i] % 2 != 0)
+		{
+			a = arr[i];
+		}
+	}
+
+	for (int i = 0; i < 5; i++)
+	{
+		if (arr[i] % 2 != 0)
+		{
+			arr[i] = arr[i] + a;
+		}
+	}
+
+
+	for (int i = 0; i < 5; i++) 
+	{
+		cout << arr[i];
+	}
+	getchar();
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int swap(float *f1, float *f2)
+{
+	*f1 += *f2;
+	*f2 = *f1 - *f2;
+	*f1 = *f1 - *f2;
+	return 0;
+}
+
+int main(void)
+{
+	float a[10];
+
+
+	int n;
+	cout << "N: ";
+	cin>>n;
+
+	int i;
+	for (i = 0; i < n; ++i) {
+		cout << i + 1;
+		cin>>a[i];
+	}
+
+	for (i = n - 2; i >= 0; --i) {
+		if (a[i] < a[i + 1]) {
+			swap(a[i], a[i + 1]);
+		}
+	}
+
+	for (i = 1; i < n; ++i) {
+		if (a[i - 1] < a[i]) {
+			swap(&a[i - 1], &a[i]);
+		}
+	}
+	cout << "A: ";
+	for (i = 0; i < n; ++i) cout <<  i + 1 << a[i];
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <ctime>
+#include <algorithm>
+using namespace std;
+
+int main(void) {
+	setlocale(LC_ALL, "rus");
+	srand(time(NULL));
+	int const n = 10;
+	int arr[n] = { 4,5,7,1,3,8,5,4,9,8 };
+	cout << "Результат: ";
+
+	int maxIndex = 0;
+	int minIndex = 0;
+	for (int i = 0; i < n; i++) {
+		if (arr[i] < arr[minIndex]) {
+			minIndex = i;
+			for (int i = 0; i < n; i++) 
+			{
+				if (arr[i] > arr[maxIndex])
+					maxIndex = i;
+
+			}
+			int start = min(minIndex, maxIndex);
+			int end = max(minIndex, maxIndex);
+			for (int i = start + 1; i < end; i++) 
+				arr[i] = 0;
+		}
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+	system("pause");
